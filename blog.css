@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    --big-font: 'Abril Fatface';
+    --main-font: 'Libre Baskerville';
+    --small-font: 'Lato';
+    --width-post: 60vw;
+}
+body{
+    width: 100%;
+    background-color: #faebc9;
+}
+header{
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+
+}
+header h1{
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 5em;
+    font-family: var(--main-font), serif;
+    font-weight: 900;
+}
+header .title-description p{
+    font-size: 1.2em;
+}
+header .date{
+    margin-top: 5px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    font-family: var(--big-font), curvasive;
+}
+.date ul{
+    list-style-type: none;
+    display: flex;
+}
+.date ul:first{
+    float: left;
+}
+.date ul li{
+    margin: auto;
+    font-weight:bold;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    line-height: 2em;
+
+}
+/*article*/
+main ol{
+    text-align: center;
+}
+main ol li{
+    font-size: 1.5em;
+}
+main ol li a{
+    text-decoration: none;
+    cursor: pointer;
+}
+main ol a:visited{
+    color: purple;
+}
+.post{
+    
+    text-align: center;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.post h3{
+    text-transform: uppercase;
+}
+.post .thumbnail{
+    font-size: 6em;
+    border-bottom: 1.5px solid black;
+    font-family: var(--big-font), curvasive;
+}
+.post article {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.post article h3{
+    margin-top: 5px;
+}
+.post article img{
+    margin: 20px 0;
+    filter: grayscale(80%);
+    width: var(--width-post);
+
+}
+.post article p{
+    margin-top: 18px;
+    text-align:justify;
+    width: var(--width-post);
+    letter-spacing: 0.04em;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: var(--small-font), sans-serif;
+    overflow-wrap:break-word;
+    word-wrap: normal;
+}
+.post article p::first-letter{
+    font-size: 6em;
+    float:left;
+    margin: 0.1em 0.1em 0.1em 0;
+
+    line-height: 0.65em;
+}
+article span{
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+/*footer*/
+footer{
+    font-size: 1.4em;
+    margin-top: 50px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+/*responsive design*/
+@media screen and (max-width: 1846px){
+    header h1{
+        font-size: 4em;
+    }
+}
+@media screen and (max-width: 500px){
+    .post article p, .post article img{
+        width: 60vw;  
+        font-size: 24px;
+    }
+
+}
