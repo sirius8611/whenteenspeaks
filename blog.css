@@ -4,11 +4,14 @@
     --big-font: 'Abril Fatface';
     --main-font: 'Libre Baskerville';
     --small-font: 'Lato';
-    --width-post: 60vw;
+    --width-post: 57vw;
 }
 body{
     width: 100%;
-    background-color: #faebc9;
+    background-color: #faebc9!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 header{
     width: 100%;
@@ -62,7 +65,7 @@ main ol a:visited{
     color: purple;
 }
 .post{
-    
+    margin-bottom: 200px; 
     text-align: center;    
     display: flex;
     align-items: center;
