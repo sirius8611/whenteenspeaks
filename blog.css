@@ -90,7 +90,7 @@ main ol a:visited{
 }
 .post article img{
     margin: 20px 0;
-    filter: grayscale(80%);
+    //filter: grayscale(80%);
     width: var(--width-post);
 
 }
